@@ -1,11 +1,31 @@
 body {
     margin: 0;
-    width: 100vw;
+    max-width: 90vw;
+    width: 500px;
+    margin: 0 auto;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
 
     background-color: midnightblue;
     color: orchid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    border-width: 5px;
+    border-radius: 4px;
+    outline: none;
 }
