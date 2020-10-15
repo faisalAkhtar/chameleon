@@ -11,7 +11,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
     width: 100%;
     margin: 0;
     color: var(--font-color);
@@ -67,14 +67,12 @@ section:nth-child(odd) {
 }
 
 header {
-    background-color: var(--theme-color);
     height: 80px;
     padding: 20px;
     box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    margin: 0;
     line-height: 40px;
 }
 
@@ -141,8 +139,7 @@ header h1 {
 
 .sectionWrap .col1 p {
     margin: 6px 0;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 110%;
     text-align: center;
 }
 
@@ -192,6 +189,7 @@ header h1 {
     position: absolute;
     height: 100px;
     width: 100px;
+    transform: translateX(-10px);
 }
 
 .sectionWrap .col2 .card1 h4,
@@ -199,7 +197,7 @@ header h1 {
 .sectionWrap .col2 .card3 h4,
 .sectionWrap .col2 .card4 h4 {
     text-align: center;
-    font-size: 24px;
+    font-size: 150%;
     line-height: 100px;
 }
 
@@ -216,7 +214,7 @@ header h1 {
 }
 
 .footerWrap h3 {
-    font-size: 24px;
+    font-size: 150%;
     line-height: 30px;
 }
 
@@ -243,8 +241,6 @@ header h1 {
 .footerWrap .col1 p {
     max-width: 300px;
     float: right;
-    font-size: 18px;
-    line-height: 22px;
     margin: 9px 0;
 }
 
@@ -258,15 +254,9 @@ header h1 {
     margin: 0;
 }
 
-.footerWrap .col2 ul li {
-    font-size: 18px;
-    line-height: 22px;
-}
-
 .footerWrap .col3 p {
     font-family: 'Crimson Text', serif;
     font-weight: 400;
-    font-size: 18px;
     text-align: center;
     margin-top: 35px;
 }
