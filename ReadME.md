@@ -9,16 +9,39 @@ Collaborations are encouraged and appreciated. The steps to contributeare pretty
 
 1. Fork this repository
 2. Add only a stylesheet to the [stylesheets/](https://github.com/faisalAkhtar/chameleon/tree/main/stylesheets) directory
-3. Create a pull request
+3. Add a JSON object with the following. An [example](#Example) is also given below :
+    1. your name
+    2. a link to your portfolio or github account or any other social media account
+    3. name of the stylesheet you added
+4. Create a pull request to this repository
+
+### Example
+Example JSON objects to be written in the script
+```javascript
+[{
+    "name": "Faisal Akhtar",
+    "link": "https://faisalAkhtar.github.io",
+    "style": "style0.css"
+}, {
+    "name": "John Doe",
+    "link": "https://www.instagram.com/dummy",
+    "style": "style-sheet1.css"
+}]
+```
+**NOTE : Don't worry too much about this though. Just do the stylesheets and mention me in the comments and I will help you out with this :smile:**
+
+
+## DOs and DONTs
 
 | DOs | DONTs |
 |-----|-------|
 | Write and add new stylesheets | Don't do minor changes in old stylesheets |
 | Drop suggestions in issues to make the HTML file to suit a wider variery of stylesheets  | Don't edit any existing file, especially the HTML file |
 
-Your name is in the publisher, you can still add it as comments at the top of your stylesheet
 
-This repository is hosting the [Hacktoberfest](https://hacktoberfest.digitalocean.com/). So do comply to the spirit of the event accordingly. Happy Hacking ! :hammer: :hammer:
+## Disclaimer
+
+This repository is hosting the [Hacktoberfest](https://hacktoberfest.digitalocean.com/). If you've not already registered to the Hacktoberfest, go register yourself now. Also, do comply to the spirit of the event accordingly. Happy Hacking ! :hammer: :hammer:
 
 [FAQs about Hacktoberfest](https://hacktoberfest.digitalocean.com/faq)
 
