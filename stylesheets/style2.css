@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+:root {
+    --font: #FFFFFF;
+    --font-dark: #484D5C;
+    --bg: #FF0D7B;
+    --bg-opacity: #FF0D7BCC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+
+    background-color: #333333;
+    color: var(--font);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-family: 'Quicksand', serif;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+section:nth-child(even), header {
+    background-color: var(--bg);
+}
+
+section:nth-child(odd) {
+    background-color: var(--bg-opacity);
+}
+
+.headerWrap,
+.landingWrap,
+.sectionWrap,
+.footerWrap {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+header h1 {
+    line-height: 40px;
+}
+
+.landingWrap {
+    min-height: calc(80vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.landing .col1,
+.landing .col2 {
+    width: 50%;
+    text-align: right;
+}
+
+.landing h1 {
+    font-size: 300%;
+    margin: 10px 0;
+}
+
+.landing h3 {
+    font-size: 150%;
+    margin: 35px 0;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+.landing button {
+    font-weight: 500;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: lightcoral;
+    height: 60px;
+    width: 200px;
+}
+
+.landing img {
+    float: left;
+    max-width: 90%;
+    transform: scaleX(-1);
+}
+
+.sectionWrap {
+    padding: 75px 0;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.sectionWrap .col1 {
+    font-size: 120%;
+    width: 50%;
+    padding-top: 50px;
+    padding-right: calc(50% - 400px);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    float: left;
+}
+
+.sectionWrap .col2 {
+    float: right;
+    width: 50%;
+}
+
+.sectionWrap .col2 .card1,
+.sectionWrap .col2 .card2,
+.sectionWrap .col2 .card3,
+.sectionWrap .col2 .card4 {
+    width: 100%;
+    background-color: var(--font);
+    padding: 25px 40px;
+    box-shadow: inset 0px 0px 15px rgba(0, 87, 255, 0.5);;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.sectionWrap .col2 .card1 img,
+.sectionWrap .col2 .card2 img,
+.sectionWrap .col2 .card3 img,
+.sectionWrap .col2 .card4 img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 40px;
+}
+
+.sectionWrap .col2 .card1 h4,
+.sectionWrap .col2 .card2 h4,
+.sectionWrap .col2 .card3 h4,
+.sectionWrap .col2 .card4 h4 {
+    color: var(--bg);
+    font-size: 150%;
+    line-height: 100px;
+}
+
+.sectionWrap .col2 .card1 p,
+.sectionWrap .col2 .card2 p,
+.sectionWrap .col2 .card3 p,
+.sectionWrap .col2 .card4 p {
+    font-size: 120%;
+    margin-top: 25px;
+    color: var(--font-dark);
+    text-align: justify;
+}
+
+.footerWrap {
+    padding: 45px 0 25px 0;
+}
+
+.footerWrap .sec1 {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footerWrap .col1,
+.footerWrap .col2 {
+    width: calc(50% - 100px);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footerWrap .col2 {
+    text-align: right;
+}
+
+.footerWrap .col2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerWrap .col2 svg {
+    display: none;
+}
+
+.footerWrap .col3 p {
+    text-align: center;
+    margin-top: 35px;
+}
+
+@media screen and (max-width:900px) {
+    header h1 {
+        text-align: center;
+    }
+
+    .landingWrap {
+        flex-direction: column;
+    }
+
+    .landing .col1 {
+        padding-top: 50px;
+    }
+
+    .landing .col1,
+    .landing .col2 {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .sectionWrap .col1,
+    .sectionWrap .col2 {
+        float: none;
+        width: 100%;
+    }
+
+    .sectionWrap .col1 {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .footerWrap .sec1 {
+        flex-direction: column-reverse;
+    }
+
+    .footerWrap .col1,
+    .footerWrap .col2 {
+        width: 100%;
+        max-width: 250px;
+        text-align: left;
+        margin: 20px 0;
+    }
+}
