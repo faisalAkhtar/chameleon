@@ -1,12 +1,16 @@
 let all = [{
-        "name": "Faisal Akhtar",
-        "link": "https://faisalakhtar.github.io",
-		"style": "style0.css"
-	}, {
-        "name": "Faisal Akhtar",
-        "link": "https://faisalakhtar.github.io",
-		"style": "style1.css"
-	}]
+    "name": "Faisal Akhtar",
+    "link": "https://faisalakhtar.github.io",
+    "style": "style0.css"
+}, {
+    "name": "Faisal Akhtar",
+    "link": "https://faisalakhtar.github.io",
+    "style": "style1.css"
+}, {
+    "name": "Shubhangi Goyal",
+    "link": "https://goyalshubhangi.github.io",
+    "style": "style2.css"
+}]
 
 let x = Math.floor(Math.random() * all.length)
 
