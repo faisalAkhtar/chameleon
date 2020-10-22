@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+
+header{
+    background-color: white;
+    height: 80px;
+    border-bottom: solid 5px whitesmoke;
+}
+body,html{
+    background-color: #37b321;
+    max-width: 100%;
+    margin:0;
+    overflow-x:hidden;
+}
+.headerWrap>h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+}
+.landing{
+    background-color:  #2dde0f;
+}
+.landingWrap{
+    min-height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 70px;
+}
+.landingWrap .col1,.landingWrap .col2, .landingWrap .col2>img{
+    max-height: 100%;
+    width: 50%;
+   /* width:100%;  */
+}
+.landingWrap .col2>img{
+    width: 100%;
+}
+.landingWrap .col1{
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+    font-size: large;
+}
+button{
+    background-color: #ce2b3a;
+    width: 150px;
+    height: 40px;
+    border: transparent;
+    font-weight: bold;
+    color: white;
+    margin:0 65%;
+    font-size: 15px;
+    border-radius: 5%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.02);
+   background-color: #dc0618;
+    font-size: 17px;
+    box-shadow: 5px 5px 5px red;
+
+}
+.landingWrap .col1 h1{
+    text-align: left;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #402E80;
+}
+.sectionWrap{
+    padding: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+.sectionWrap .col1 h2{
+    color:white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.sectionWrap .col2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card1,.card2,.card3,.card4{
+    display: inline;
+    margin: 20px;
+    background-color: white;
+    max-width: 40%;
+    border-radius: 5%;
+    padding: 15px;
+    transition: 0.4s;
+}
+.card1>h4,.card2>h4,.card3>h4,.card4>h4{
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card1>img,.card2>img,.card3>img,.card4>img{
+    max-height: 30%;
+    margin: 0 40%;
+}
+.card1:hover,.card2:hover,.card3:hover,.card4:hover{
+    background-color: #0f2f07;
+    color: white;
+    font-weight: 250;
+    cursor: pointer;
+    transform: scale(1.04);
+}
+footer{
+    background-color: white;
+    box-shadow: -10px 0  20px 5px whitesmoke;
+    font-size: larger;
+    height: 300px;
+}
+.footerWrap{
+    height: 200px;
+}
+svg{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.sec1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sec1 h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.sec1 .col2 h3{
+    text-align: center;
+}
+.sec1 .col1 p{
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+.footerWrap .col2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+ul{ display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+ul p{
+    display: none;
+}
+.footerWrap .col3{
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+}
+  .footerWrap {
+    margin-bottom: 0;
+    padding: 10px;
+}
+  footer .col3 p{
+      margin-bottom:0;
+  }
+
+@media screen and (max-width: 700px){
+    .card1,.card2,.card3,.card4{
+        max-width: 95%;
+    }
+    .landingWrap{
+        flex-direction: column;
+        align-items: center;
+        padding:5%;
+    }
+    .landingWrap .col1{
+        text-align: center;
+    }
+    .landingWrap .col1 h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .landingWrap .col1,.landingWrap .col2 {
+        width: 95%;
+    }
+    .landingWrap .col2{
+    margin-top: 10px
+    }
+
+    button{
+       margin:20px  auto;
+    }
+}
+
+@media screen  and (max-width: 500px){
+    header{
+        height:40px;
+        padding: 5px;
+    }
+    .headerWrap>h1{
+        font-size: 30px;
+    }
+    footer .col3{
+        font-size: small;
+    }
+    svg{
+        width: 25px;
+        height: 25px;
+    }
+    footer .sec1 .col1 p,footer .sec1 h3{
+        font-size: small;
+    }
+    footer .sec1 h3{
+        font-size: 20px;
+    }
+    .card1,.card2,.card3,.card4{
+        max-width: 97%;
+        margin:2%;
+        font-size: 15px;
+    }
+}
