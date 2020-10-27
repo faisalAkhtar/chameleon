@@ -25,6 +25,11 @@ let all = [{
     "name": "Pratyusha K",
     "link": "https://github.com/pratyushakatti13",
     "style": "style5.css"
+},
+{
+    "name": "Miguel M-Maestro",
+    "link": "https://github.com/miguelmml",
+    "style": "style6.css"
 }
 ]
 
