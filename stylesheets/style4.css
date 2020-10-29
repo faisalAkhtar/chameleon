@@ -54,7 +54,6 @@ p {
     letter-spacing: 15px;
     #-webkit-transform: translate(-50%,-50%);
     transform: translate(0%,200%);
-    #top: 9%;
     margin: 0 auto;
     
 }
@@ -62,16 +61,13 @@ p {
 .landingWrap .col1 h1{
     width: 100%;
     font-size: 2.5rem;
-    #-webkit-transform: translate(-50%,-50%);
     transform: translate(0%,650%);
-    #top: 14%;
     margin: 0 auto;
     word-spacing: 10px;
 }
 
 .landingWrap .col1 h3{
     font-size: 1.2rem;
-    #-webkit-transform: translate(-50%,-50%);
     transform: translate(0%,2000%);
     #top: 23%;
     left: 0%;
@@ -103,9 +99,7 @@ a:hover {
 
 .landingWrap img{
     max-width: 70%;
-    #-webkit-transform: translate(-50%,-50%);
     transform: translate(0%,25%);
-    #top: 180px;
     margin: 0 auto;
     left: 15%;
     right: 33%;
@@ -129,7 +123,6 @@ button{
     cursor: pointer;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(0%,2000%);
-    #top: 26%;
     left: 40%;
     right: 40%;
     margin: 0 auto;
@@ -160,10 +153,6 @@ button{
 .sectionWrap .col1 h2{
     transform: translate(-17%,10%);
     width: 155%;
-    #max-width: 155%;
-    #left: 45%;
-    #right: 45%;
-    #margin: 0 auto;
     text-align: center;
     padding-bottom: 50px;
     font-size: 200%;
@@ -172,10 +161,6 @@ button{
 .sectionWrap .col1 p{
     transform: translate(-17%,90%);
     width: 155%;
-    #max-width: 155%;
-    #left: 45%;
-    #right: 45%;
-    #margin: 0 auto;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 50px;
