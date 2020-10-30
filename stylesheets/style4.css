@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@700&family=Gruppo&family=Jura&family=Maven+Pro:wght@500&family=Poiret+One&family=Prompt&family=Quicksand:wght@500&display=swap');
+:root {
+    --font: #FFF;
+    --font-banner: #002E33;
+    --font-dark: #484D5C;
+    --bg: #002E33;
+    --bg-opacity: #FFF;
+}
+
+/*
+============================
+Basic Layout
+============================
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+/*
+============================
+Background and Font
+============================
+*/
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+
+    background-color: #333333;
+    color: var(--font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-family: 'Quicksand', serif;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+section:nth-child(even), header {
+    background-color: var(--bg);
+}
+
+section:nth-child(odd) {
+    background-color: var(--bg-opacity);
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+header h1 {
+    line-height: 40px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 33px;
+}
+
+.landingWrap {
+    min-height: calc(80vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    color: var(--font-banner);
+}
+
+.landing .col1,
+.landing .col2 {
+    width: 80%;
+    text-align: center;
+}
+
+.landing h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 350%;
+    margin: 10px 0;
+}
+
+.landing h3 {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 200%;
+    margin: 35px 0;
+}
+
+.landing button {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 20px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border-width: 3px;
+    height: 60px;
+    width: 200px;
+}
+
+.sectionWrap .col1 h2 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 35px;
+}
+
+.sectionWrap .col1 p {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+}
+
+.sectionWrap .col2 .card1 h4,
+.sectionWrap .col2 .card2 h4,
+.sectionWrap .col2 .card3 h4,
+.sectionWrap .col2 .card4 h4 {
+    color: var(--bg);
+    font-family: 'Prompt', sans-serif;
+    font-size: 150%;
+    line-height: 100px;
+}
+
+.sectionWrap .col2 .card1 p,
+.sectionWrap .col2 .card2 p,
+.sectionWrap .col2 .card3 p,
+.sectionWrap .col2 .card4 p {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 120%;
+    margin-top: 25px;
+    color: var(--font-dark);
+    text-align: justify;
+}
+
+.footerWrap .col1 h3 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 34px;
+}
+
+.footerWrap .col1 p {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16.5px;
+}
+
+.footerWrap .col2 h3 {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 26px;
+}
+
+/*
+============================
+Positioning and layout
+============================
+*/
+
+.headerWrap,
+.landingWrap,
+.sectionWrap,
+.footerWrap {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.landingWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landingWrap .col1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.landing img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.sectionWrap {
+    padding: 75px 0;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.sectionWrap .col1 {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.sectionWrap .col1 h2{
+    text-align: center;
+}
+
+.sectionWrap .col2 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sectionWrap .col2 .card1,
+.sectionWrap .col2 .card2,
+.sectionWrap .col2 .card3,
+.sectionWrap .col2 .card4 {
+    width: 100%;
+    background-color: var(--font);
+    padding: 25px 40px;
+    box-shadow: inset 0px 0px 15px rgba(0, 87, 255, 0.5);;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.sectionWrap .col2 .card1 img,
+.sectionWrap .col2 .card2 img,
+.sectionWrap .col2 .card3 img,
+.sectionWrap .col2 .card4 img {
+    float: left;
+    height: 100px;
+    width: 100px;
+    right: 40px;
+}
+
+.sectionWrap .col2 .card1 h4,
+.sectionWrap .col2 .card2 h4,
+.sectionWrap .col2 .card3 h4,
+.sectionWrap .col2 .card4 h4 {
+    text-align: right;
+}
+
+.footerWrap {
+    padding: 45px 0 25px 0;
+    color: var(--font-banner);
+}
+
+.footerWrap .sec1 {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footerWrap .col1,
+.footerWrap .col2 {
+    width: calc(50% - 100px);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footerWrap .col2 h3{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.footerWrap .col2 {
+    text-align: right;
+}
+.footerWrap .col2 p {
+    display: none;
+}
+
+.footerWrap .col2 svg {
+    height: 30px;
+    fill: var(--font-banner);
+}
+
+.footerWrap .col2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerWrap .col2 ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.footerWrap .col3 p {
+    text-align: center;
+    margin-top: 35px;
+}
+
+/*
+============================
+Phone View
+============================
+*/
+
+@media screen and (max-width:900px) {
+    header h1 {
+        text-align: center;
+    }
+
+    .landingWrap {
+        flex-direction: column;
+    }
+
+    .landing .col1 {
+        padding-top: 50px;
+    }
+
+    .landing .col1,
+    .landing .col2 {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .sectionWrap .col1,
+    .sectionWrap .col2 {
+        float: none;
+        width: 100%;
+    }
+
+    .sectionWrap .col1 {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .footerWrap .sec1 {
+        flex-direction: column-reverse;
+    }
+
+    .footerWrap .col1,
+    .footerWrap .col2 {
+        margin-left: 0;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        overflow-x: auto;
+    }
+}

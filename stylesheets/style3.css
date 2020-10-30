@@ -100,8 +100,8 @@ button:hover{
     text-align: center;
 }
 .card1>img,.card2>img,.card3>img,.card4>img{
-    max-height: 30%;
-    margin: 0 40%;
+    height: 100px;
+    width: 100px;
 }
 .card1:hover,.card2:hover,.card3:hover,.card4:hover{
     background-color: #0f2f07;
