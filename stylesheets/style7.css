@@ -1,0 +1,423 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
+:root {
+    --theme-color: #0057FF;
+    --font-color: #976008;
+}
+
+* {
+    box-sizing: border-box;
+}
+html{
+    overflow-y: scroll; 
+    overflow-x:hidden;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    color: var(--font-color);
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Cookie', cursive,'Sansita Swashed', cursive;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+.headerWrap h1,
+.col1 h1,
+.col1 h3{
+    font-family: 'Lemonada', cursive/*'Cookie', cursive,'Sansita Swashed', cursive*/;
+    font-weight: 300;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    z-index: 9;
+    
+}
+.headerWrap h1{
+    width: 100%;
+    font-size: 5rem;
+    letter-spacing: 15px;
+    #-webkit-transform: translate(-50%,-50%);
+    transform: translate(0%,200%);
+    margin: 0 auto;
+    
+}
+
+.landingWrap .col1 h1{
+    width: 100%;
+    font-size: 2.5rem;
+    transform: translate(0%,650%);
+    margin: 0 auto;
+    word-spacing: 10px;
+}
+
+.landingWrap .col1 h3{
+    font-size: 1.2rem;
+    transform: translate(0%,2000%);
+    #top: 23%;
+    left: 0%;
+    right: 0%;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.landingWrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.landingWrap .col2{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.landingWrap img{
+    max-width: 70%;
+    transform: translate(0%,25%);
+    margin: 0 auto;
+    left: 15%;
+    right: 33%;
+    position: relative;
+}
+
+.landing{
+    background-color: #f8c573;
+    height: 100vh;
+}
+button{
+    background-color: #82450f;
+    width: 20%;
+    height: 40px;
+    border: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    border-radius: 5%;
+    transition: 0.3s;
+    cursor: pointer;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(0%,2000%);
+    left: 40%;
+    right: 40%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+
+.sectionWrap{
+    background-color: #fbe0b4;
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+    padding-bottom: 150px;
+    
+}
+
+.sectionWrap .col1{
+    padding-bottom: 200px;
+}
+
+.sectionWrap .col2{
+    transform: skewY(-10deg);
+}
+
+.sectionWrap .col1 h2{
+    transform: translate(-17%,10%);
+    width: 155%;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 200%;
+    position: absolute;
+}
+.sectionWrap .col1 p{
+    transform: translate(-17%,90%);
+    width: 155%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 200%;
+    position: absolute;
+}
+
+.sectionWrap .col1 p{
+    font-size: 1.2rem;
+    font-family: 'Lemonada', cursive;
+}
+
+.sectionWrap .card1 h4,
+.sectionWrap .card2 h4,
+.sectionWrap .card3 h4,
+.sectionWrap .card4 h4,
+.sectionWrap .card1 p,
+.sectionWrap .card2 p,
+.sectionWrap .card3 p,
+.sectionWrap .card4 p{
+    text-align: center;
+    padding-bottom: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.sectionWrap .card1,
+.sectionWrap .card2,
+.sectionWrap .card3,
+.sectionWrap .card4{
+    margin: 2% 10%;
+    position: relative;
+    width: 30%;
+    height: 600px;
+    background: #fef4e4;
+    transition: 0.5s;
+    padding: 50px 0;
+    float: left;
+}
+.sectionWrap .col2 .card1 img,
+.sectionWrap .col2 .card2 img,
+.sectionWrap .col2 .card3 img,
+.sectionWrap .col2 .card4 img {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25%;
+}
+
+.sectionWrap .card1:before,
+.sectionWrap .card2:before,
+.sectionWrap .card3:before,
+.sectionWrap .card4:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background: #f6b853;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+    top: -15px;
+    
+}
+
+.sectionWrap .card1:after,
+.sectionWrap .card2:after,
+.sectionWrap .card3:after,
+.sectionWrap .card4:after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 50%;
+    background: #f6b853;
+    transform-origin: left;
+    transform: skewY(45deg);
+    transition: 0.5s;
+    top: -15px;
+    left:-15px;
+    border-bottom: 300px solid #fce7c4;
+    
+}
+
+.sectionWrap .card1 p:after,
+.sectionWrap .card2 p:after,
+.sectionWrap .card3 p:after,
+.sectionWrap .card4 p:after{
+    position: absolute;
+    content: '';
+    height: 600px;
+    background: linear-gradient(transparent,transparent,rgba(0,0,0,0.1));
+    
+}
+
+.sectionWrap .col2{
+    margin-top: 70px;
+}
+
+.sectionWrap .card1:hover,
+.sectionWrap .card2:hover,
+.sectionWrap .card3:hover,
+.sectionWrap .card4:hover{
+    transform: translateY(-40px);
+}
+
+.footerWrap {
+    background-color: #c87f0a;
+}
+
+.footerWrap .col1 h3,
+.footerWrap .col1 p{
+    padding-top: 20px;
+    width: 1920px;
+    text-align: center;
+    color: #674205;
+    font-size: 1.6rem;
+}
+
+.footerWrap .col1 p{
+    padding-top: 70px;
+    font-size: 1.2rem;
+    font-family: 'Lemonada', cursive;
+}
+
+.footerWrap .col2 h3{
+    text-align: center;
+    color: #674205;
+}
+
+.footerWrap .col3 p{
+    text-align: center;
+    color: #261802;
+    padding-top: 50px;
+    font-size: 1.2rem;
+    font-family: 'Lemonada', cursive;
+}
+
+ul{ display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+ul p{
+    display: none;
+}
+
+
+.footerWrap .col2 svg,
+.footerWrap .col2 svg,
+.footerWrap .col2 svg,
+.footerWrap .col2 svg{
+    height: 30px;
+    fill: var(--font);
+}
+
+
+/*--------------------------------
+-----------MEDIA QUERIES----------
+---------------------------------*/
+
+@media screen  and (max-width: 1313px){
+    .headerWrap h1{
+    font-size: 4.5rem;
+    letter-spacing: 25px;
+    transform: translate(0%,80%);
+    }
+
+    .landingWrap .col1 h1{
+        transform: translate(0%,700%);
+    }
+    .landingWrap .col1 h3{
+    transform: translate(0%,1900%);
+    position: relative;
+    }
+}
+@media screen  and (max-width: 1023px){
+    .landingWrap .col1 h3{
+    transform: translate(0%,900%);
+    position: relative;
+    }
+}
+@media screen  and (max-width: 816px){
+    .headerWrap h1{
+    font-size: 4rem;
+    letter-spacing: 10px;
+    transform: translate(0%,120%);
+    }
+    .landingWrap .col1 h1{
+        font-size: 2rem;
+        transform: translate(0%,900%);
+        letter-spacing: 0px;
+    }
+}
+@media screen  and (max-width: 667px){
+    .landingWrap .col1 h1{
+        font-size: 1.2rem;
+        transform: translate(0%,1600%);
+        letter-spacing: 0px;
+    }
+    .landingWrap .col1 h3{
+    transform: translate(0%,1500%);
+    position: relative;
+    font-size: 0.8rem;
+    }
+}
+@media screen  and (max-width: 480px){
+    .headerWrap h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    transform: translate(0%,120%);
+    }
+    .landingWrap .col1 h1{
+        font-size: 1.1rem;
+        transform: translate(0%,1500%);
+        letter-spacing: 0px;
+    }
+    .sectionWrap .card1,
+    .sectionWrap .card2,
+    .sectionWrap .card3,
+    .sectionWrap .card4{
+    margin: 2% 10%;
+    position: relative;
+    width: 30%;
+    height: 800px;
+    background: #fef4e4;
+    transition: 0.5s;
+    padding: 50px 0;
+    float: left;
+    }
+    .sectionWrap .col1 p{
+    transform: translate(-17%,50%);
+    }
+    
+    
+}
+
+@media screen  and (max-width: 400px){
+    .landingWrap .col1 h1{
+    font-size: 1.2rem;
+    transform: translate(0%,850%);
+    word-spacing: 0px;
+    }
+
+    .landingWrap .col1 h3{
+        font-size: 0.6rem;
+        transform: translate(0%,2000%);
+    }
+}
+
+@media screen  and (max-width: 290px){
+    .sectionWrap .col1 p{
+    transform: translate(-17%,-220%);
+    font-size: 50%;
+}
+}
+
