@@ -10,18 +10,27 @@ let all = [{
     "name": "Shubhangi Goyal",
     "link": "https://goyalshubhangi.github.io",
     "style": "style2.css"
-},
-    {
-        "name": "Sonali Gupta",
-        "link": "https://github.com/slytherin20",
-        "style": "style3.css"
-},
-    {
-        "name": "Himanshu Bobade",
-        "link": "https://github.com/himanshubobade",
-        "style": "style4.css"
-    }
-]
+}, {
+    "name": "Sonali Gupta",
+    "link": "https://github.com/slytherin20",
+    "style": "style3.css"
+}, {
+    "name": "Nirali Sahoo",
+    "link": "https://github.com/nizz009",
+    "style": "style4.css"
+}, {
+    "name": "Pratyusha K",
+    "link": "https://github.com/pratyushakatti13",
+    "style": "style5.css"
+}, {
+    "name": "Miguel M-Maestro",
+    "link": "https://github.com/miguelmml",
+    "style": "style6.css"
+}, {
+    "name": "Himanshu Bobade",
+    "link": "https://github.com/himanshubobade",
+    "style": "style7.css"
+}]
 
 let x = Math.floor(Math.random() * all.length)
 
