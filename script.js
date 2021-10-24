@@ -30,6 +30,10 @@ let all = [{
     "name": "Himanshu Bobade",
     "link": "https://github.com/himanshubobade",
     "style": "style7.css"
+}, {
+    "name": "Shubhangi Goyal",
+    "link": "https://github.com/goyalshubhangi",
+    "style": "style8.css"
 }]
 
 let x = Math.floor(Math.random() * all.length)

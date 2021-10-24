@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Comfortaa&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+a {
+    color: #3C1874;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: 2px wavy underline;
+    text-underline-position: under;
+}
+
+section {
+    padding: 30px 50px;
+    transition: 1s background-color;
+}
+
+section:first-child {
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #283747;
+    color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section:nth-child(2), section:nth-child(3) {
+    width: calc(100% - 400px);
+    background-color: #F3F3F3;
+    color: #283747;
+}
+
+.headerWrap {
+    font-family: 'Festive';
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.landingWrap .col2 {
+    margin-top: 20px;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 6px 10px;
+    border-radius: 2px;
+    border-width: 2px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0 30px 0;
+}
+
+section:nth-child(2) {
+    padding-top: 50px;
+}
+
+.sectionWrap .col1, .sectionWrap .col2 {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.sectionWrap .col1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sectionWrap .col2 {
+    display: flex;
+    overflow: auto;
+    column-gap: 50px;
+}
+
+.card1, .card2, .card3, .card4 {
+    background-color: #932432;
+    color: #F3F3F3;
+    padding: 50px 30px;
+    border-radius: 4px;
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 1s background-color;
+    word-break: break-all;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    background-color: #3C1874;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img {
+    width: 200px;
+}
+
+.card1 h4, .card2 h4, .card3 h4, .card4 h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.footerWrap .col1, .footerWrap .col2 {
+    margin: 50px 0;
+}
+
+.footerWrap .col2 ul {
+    display: flex;
+    overflow: auto;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.footerWrap .col2 li {
+    margin: 0 20px;
+}
+
+.footerWrap .col2 li svg {
+    fill: #932432;
+    width: 75px;
+}
+
+@media screen and (max-width: 900px) {
+    section:nth-child(1), section:nth-child(2), section:nth-child(3) {
+        width: 100%;
+    }
+    section:first-child {
+        position: unset;
+        min-height: 100vh;
+    }
+}
