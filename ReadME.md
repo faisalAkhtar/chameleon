@@ -39,6 +39,10 @@ Example JSON objects to be written in the script
 | Drop suggestions in issues to make the HTML file to suit a wider variery of stylesheets  | Don't edit any existing file, especially the HTML file |
 
 
+## Contributors
+[![Contributors](https://contrib.rocks/image?repo=faisalakhtar/chameleon)](https://github.com/faisalakhtar/chameleon/graphs/contributors)
+
+
 ## Disclaimer
 
 This repository is hosting the [Hacktoberfest](https://hacktoberfest.digitalocean.com/). If you've not already registered to the Hacktoberfest, go register yourself now. Also, do comply to the spirit of the event accordingly. Happy Hacking ! :hammer: :hammer:
